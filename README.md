@@ -5,10 +5,10 @@ Initial Notes:
 - The app is hosted on a localhost:3000 and the server on localhost:5000.
 - Prerequisites: MongoDB (https://www.mongodb.com/download-center/community)
 - Recommended usage :
-     npm install
-     npm mongod - start the MongoDB service
-     npm nodemon server - initialize the server communication protocols for the POST method
-     npm start - will be redirected to localhost:3000 to see the app.
+    - npm install 
+    - npm mongod - start the MongoDB service 
+    - npm nodemon server - initialize the server communication protocols for the POST method
+    - npm start - will be redirected to localhost:3000 to see the app.
 
 Addendum: The app's structure was made simple for the reason of demo concept functionality. Possible implementations in the future:
         - Refactor the Mock-up data into an actual DB
