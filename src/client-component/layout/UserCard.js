@@ -10,7 +10,8 @@ import CustomButton from './CustomHeartButton/CustomButton'
 
 const styles = {
   card: {
-    minWidth: 275
+    minWidth: 275,
+    marginBottom: 10
   },
   bullet: {
     display: 'inline-block',

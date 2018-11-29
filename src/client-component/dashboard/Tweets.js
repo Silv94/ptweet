@@ -58,14 +58,14 @@ const enhance = compose(
       })
       const body = await response.text()
       props.updatedPost('')
-      var newStar = [{
+      var newStar = {
         avatar: require('../images/hammer.png'),
         name: 'Sebi "The Viking"',
         review: 'Alex suffers from inner genital syndrome',
         message: body,
         rating: Math.round(Math.random() * 100)
-      }]
-      props.updateStar(stars => [...newStar, ...stars])
+      }
+      props.updateStar(stars => [newStar, ...stars])
     },
     onChange: ({ updatedPost }) => e =>
       updatedPost(e.target.value)
@@ -91,10 +91,8 @@ const Tweets = ({ post, stars, handleSubmit, onChange }) => {
       </form>
       <br />
       {stars.map((star) =>
-        (<div>
-          <UserCard avatar={star.avatar} name={star.name} review={star.review} message={star.message} rating={star.rating} />
-          <br />
-        </div>))}
+        <UserCard key={star.id} avatar={star.avatar} name={star.name} review={star.review} message={star.message} rating={star.rating} />
+      )}
     </div>
   )
 }
