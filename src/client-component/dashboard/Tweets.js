@@ -65,7 +65,6 @@ const enhance = compose(
         message: body,
         rating: Math.round(Math.random() * 100)
       }]
-      console.log(body)
       props.updateStar(stars => [...newStar, ...stars])
     },
     onChange: ({ updatedPost }) => e =>
