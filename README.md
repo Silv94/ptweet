@@ -10,10 +10,8 @@ Initial Notes:
     - npm nodemon server - initialize the server communication protocols for the POST method
     - npm start - will be redirected to localhost:3000 to see the app.
 
-Addendum: The app's structure was made simple for the reason of demo concept functionality. Possible implementations in the future:
-        - Refactor the Mock-up data into an actual DB
-        - Implement login
-        - Add Re-post functionality.
+Update:
+    -refactored main core functionality with Recompose
 
 PS: Have fun! :)
 --------

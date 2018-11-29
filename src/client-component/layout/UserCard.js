@@ -37,7 +37,7 @@ const styles = {
   }
 }
 
-const UserCard = ({ avatar, classes, name, review, message, rating }) => {
+const UserCard = ({ avatar, name, review, message, rating, classes }) => {
   return (
     <Card className={classes.card}>
       <CardContent>

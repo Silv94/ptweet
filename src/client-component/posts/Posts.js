@@ -86,7 +86,6 @@ class Tweets extends Component {
   render () {
     return (
       <div className='project-list section'>
-
         <form onSubmit={this.handleSubmit}>
           <p>
             <strong>Post a new Tweet:</strong>

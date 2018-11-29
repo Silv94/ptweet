@@ -1,5 +1,5 @@
 import React from 'react'
-import Tweets from '../posts/Posts'
+import Tweets from './Tweets'
 
 const styles = {
   container: {
@@ -8,15 +8,15 @@ const styles = {
 }
 
 const Dashboard = () => {
-    return (
-      <div className="dashboard container">
-        <div className="row"> 
-          <div className='container' styles={styles.container}>
-            <Tweets />
-          </div>
+  return (
+    <div className='dashboard container'>
+      <div className='row'>
+        <div className='container' styles={styles.container}>
+          <Tweets />
         </div>
       </div>
-    )
+    </div>
+  )
 }
 
 export default Dashboard
